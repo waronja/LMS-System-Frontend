@@ -33,6 +33,7 @@ const Signup = () => {
                 <div>
                  <input className='loginbtn' type="submit" value="Sign up" />
                </div>
+                 
            </form>
     
 
