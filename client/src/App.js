@@ -5,14 +5,14 @@ import Signup from './components/Signup';
 import Forgot from './components/Forgot';
 import Layout from './components/Dashboard/Layout';
 import Metric from './components/Metric';
-// import DashSummary from './components/Dashboard/DashSummary';
+import DashSummary from './components/Dashboard/DashSummary';
 
 function App() {
   return (
     <div className="App">
 
 
-      {/* <DashSummary/> */}
+     
        <Layout/>
        <DashSummary/>
        <Metric/>
