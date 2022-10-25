@@ -6,13 +6,14 @@ import Forgot from './components/Forgot';
 import Layout from './components/Dashboard/Layout';
 import Metric from './components/Metric';
 import DashSummary from './components/Dashboard/DashSummary';
+import CourseDetails from './components/Course/CourseDetails';
 
 function App() {
   return (
     <div className="App">
 
 
-      {/* <DashSummary/> */}
+       <CourseDetails/>
        <Layout/>
        <DashSummary/>
        <Layout/>
