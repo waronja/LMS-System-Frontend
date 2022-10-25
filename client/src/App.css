@@ -91,3 +91,42 @@ background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.09);
 border-radius: 8px;
 }
+
+.dashboardsummaryelements{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.summarycontainer{
+width: 334px;
+height: 551px;
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.09);
+border-radius: 8px;
+/* padding: 6px; */
+}
+
+.summaryheader{
+  display: flex;
+  justify-content: space-between;
+   width: 334px;
+   height: 60px;
+  background: #FFFFFF;
+  border-radius: 7px 7px 0px 0px;
+  padding: 6px;
+}
+
+.summarycontent{
+  width: 334px;
+  height: 491px;
+}
+
+.dashsummarycard{
+  width: 286px;
+  height: 77px;
+  left: 298px;
+  top: 472px;
+  background: #FFFFFF;
+  border-radius: 0px;
+}
