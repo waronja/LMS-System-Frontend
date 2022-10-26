@@ -132,3 +132,66 @@ margin: 5px;
   background: #FFFFFF;
   border-radius: 0px;
 }
+
+.sidebar button{
+  background-color: #000080;
+  color: white;
+  padding: 15px;
+  margin: 15px;
+  margin-left: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  font-size: 16px;
+}
+.sidebar button:hover{
+  transform: scale(1.1);
+}
+.sidebar h1{
+  margin-top: 15px;
+}
+.sidebar .btns{
+  margin-left: 25rem;
+}
+
+.single__course__item {
+  padding: 15px;
+}
+
+.course__img img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.enroll a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #17bf9e;
+}
+
+.lesson,
+.students,
+.rating {
+  font-size: 0.9rem;
+  color: #0a2b1e;
+  font-weight: 500;
+}
+
+.lesson i,
+.students i,
+.rating i {
+  font-weight: 400;
+}
+
+.course__title {
+  line-height: 2rem;
+}
+
+.course__top__left h2 {
+  font-weight: 600;
+}
+
