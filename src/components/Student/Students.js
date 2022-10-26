@@ -1,11 +1,17 @@
 import React from 'react'
+import "./Students.css";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Layout from '../../Layout';
 
 const Students = () => {
   return (
-    <div>
-        <h5> Here is a List Of Students </h5>
+    <div className ="studentsContainer">
+
+        <Layout/>
+        <div>
+
+            <h5> Here is a List Of Students </h5>
 
       <CardGroup>
       <Card>
@@ -49,6 +55,10 @@ const Students = () => {
         </Card.Footer>
       </Card>
     </CardGroup>
+
+        </div>
+
+        
       
     </div>
   )
