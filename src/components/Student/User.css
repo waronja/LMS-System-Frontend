@@ -1,0 +1,13 @@
+.studentsContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 100pc;
+}
+.cards{
+    padding: 10px;
+    
+}
+.card{
+    margin: 5px;
+}

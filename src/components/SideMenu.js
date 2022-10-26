@@ -10,13 +10,23 @@ export default function SideMenu() {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
             <li>
-                <Link to="/" className="nav-link text-white">
+                <Link to="/dashboard" className="nav-link text-white">
                 Dashboard
                 </Link>
             </li>
             <li>
-            <Link to="/users" className="nav-link text-white">
-                Users
+            <Link to="/instructors" className="nav-link text-white">
+                Instructors
+                </Link>
+            </li>
+            <li>
+            <Link to="/students" className="nav-link text-white">
+                Students
+                </Link>
+            </li>
+            <li>
+            <Link to="/courses" className="nav-link text-white">
+                Courses
                 </Link>
             </li>
         </ul>

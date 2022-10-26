@@ -48,6 +48,7 @@ function Instructor() {
         <button>Courses</button>
         <button>Assignments</button>
       </div>
+      
        <section>
       <Container>
         <Row>
@@ -76,7 +77,33 @@ function Instructor() {
       </Container>
     </section>
     </div>
-  )
-}
+// import Card from 'react-bootstrap/Card';
+// import CardGroup from 'react-bootstrap/CardGroup';
+// import UserCard from '../UserCard';
+// import Layout from '../../Layout';
 
-export default Instructor
+
+/* const Instructor = () => {
+  return (
+    <div className = "studentsContainer">
+
+      <Layout/>
+
+      <div>
+
+        <h3>I am an instructor </h3>
+
+          <CardGroup>
+
+            <UserCard/>
+
+          </CardGroup>
+
+      </div>
+        
+
+    </div>*/
+  )
+} 
+
+export default Instructor;
