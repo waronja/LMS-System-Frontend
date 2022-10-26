@@ -87,11 +87,19 @@ margin: 5px;
   margin-bottom: 20px;
 }
 
+.course__img img:hover{
+  transform: scale(1.1);
+}
+
 .enroll a {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
   color: #000080;
+}
+
+.enroll a:hover {
+  transform: scale(1.1);
 }
 
 .lesson,
