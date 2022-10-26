@@ -1,23 +1,15 @@
 .App {
   /* text-align: center; */
-  /* height: 100vh; */
+  height: 100vh;
   background-color: #F5F5F5;
   margin: 0;
 
   display: flex;
   justify-content: center; 
-   align-items: center;
+  /* align-items: center; */
+  
 
 }
-
-
-/* .passwordcheck{
-  display: flex;
-} */
-/* .logincheckbox{
-  /* display: flex; 
-  position: absolute;
-} */
 
 
 

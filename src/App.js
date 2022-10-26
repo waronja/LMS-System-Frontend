@@ -16,28 +16,7 @@ import Courses from './components/Course/Courses';
 function App() {
   return (
     <div className="App">
-
-
-       {/* <CourseDetails/> 
-        <Layout/>
-       <DashSummary/>
-       <Layout/>
-       <Metric/>
-       <Metric/>
-       <Metric/>
-       <Login />
-       <Signup />
-       <Forgot />
-       <Dashboard />
-       <Users /> */}
-
-    {/* <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Dashboard />} />
-        <Route path="/users" element={<Users />} />
-        <Route path="/login" element={<Login />} />
-      </Route>
-    </Routes> */}
+    
     
     <Routes>
         <Route path="/" element={<Login/>} />
