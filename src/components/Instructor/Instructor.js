@@ -3,13 +3,12 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
 
-
 const Instructor = () => {
   return (
     <div>
         <h3>I am an instructor </h3>
 
-        <CardGroup>
+      <CardGroup>
       <Card>
         <Card.Img variant="top" src="holder.js/100px160" />
         <Card.Body>

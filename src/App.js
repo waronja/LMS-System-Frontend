@@ -9,9 +9,9 @@ import Signup from './components/SignUp-In/Signup';
 //  import Layout from './Layout';
 // import Metric from './components/Metric';
 // import DashSummary from './components/Dashboard/DashSummary';
-import CourseDetails from './components/Course/CourseDetails';
 import Students from './components/Student/Students';
 import Instructor from './components/Instructor/Instructor';
+import Courses from './components/Course/Courses';
 
 function App() {
   return (
@@ -45,7 +45,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/users" element={<Users/>} />
         <Route path="/forgot" element={<Forgot/>} />
-        <Route path="/courses" element={<CourseDetails/>} />
+        <Route path="/courses" element={<Courses/>} />
         <Route path="/students" element={<Students/>} />
         <Route path="/instructors" element={<Instructor/>} />
        
