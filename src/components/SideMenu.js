@@ -10,7 +10,7 @@ export default function SideMenu() {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
             <li>
-                <Link to="/" className="nav-link text-white">
+                <Link to="/dashboard" className="nav-link text-white">
                 Dashboard
                 </Link>
             </li>

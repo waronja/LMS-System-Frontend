@@ -1,7 +1,11 @@
-.Dashboard {
-
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    
+    
 }
 
-.Dashboard h1 {
-    
+.dashboardcomponents{
+    display: flex;
+    flex-direction: row;
 }

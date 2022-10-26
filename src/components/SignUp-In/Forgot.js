@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Forgot"
 
 const Forgot = () => {
   return (
