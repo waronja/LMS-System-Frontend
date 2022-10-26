@@ -55,8 +55,12 @@ function Instructor() {
           <Col lg="12" className="mb-5">
             <div className="course__top d-flex justify-content-between align-items-center">
               <div className="course__top__left w-50">
-                <h2>Our Popular Courses</h2>
+                <h2>Our Courses</h2>
                 <p>
+                  Here are some of the main content of various courses you can 
+                  add to your curriculum. And they are student friendly.
+                  Add them to your curriculum and learn more about them before
+                  you recommend them to students 
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
                   consequatur libero quod voluptatibus ullam quia quas, vitae
                   voluptatem recusandae reprehenderit!
