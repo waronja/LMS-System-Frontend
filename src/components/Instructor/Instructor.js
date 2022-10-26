@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card';
+// import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import UserCard from '../UserCard';
 import Layout from '../../Layout';
@@ -15,7 +15,11 @@ const Instructor = () => {
 
         <h3>I am an instructor </h3>
 
-        <UserCard/>
+          <CardGroup>
+
+            <UserCard/>
+
+          </CardGroup>
 
       </div>
         
