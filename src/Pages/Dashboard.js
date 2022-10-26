@@ -1,8 +1,15 @@
 import React from 'react'
+import Metric from '../components/Metric'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div className="Dashboard">
+      <h1>Dashboard Page</h1>
+
+      <Metric/>
+
+      
+    </div>
   )
 }
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route,Routes } from 'react-router-dom';
 import './App.css';
+import Dashboard from './Pages/Dashboard';
+import Users from './Pages/Users';
 import Login from './components/SignUp-In/Login';
 import Signup from './components/SignUp-In/Signup';
 import Forgot from './components/SignUp-In/Forgot';
-import Layout from './components/Dashboard/Layout';
+import Layout from './Layout';
 import Metric from './components/Metric';
 import DashSummary from './components/Dashboard/DashSummary';
 import CourseDetails from './components/Course/CourseDetails';
@@ -14,8 +16,8 @@ function App() {
     <div className="App">
 
 
-       {/* <CourseDetails/>
-       <Layout/>
+       {/* <CourseDetails/> */}
+       {/* <Layout/>
        <DashSummary/>
        <Layout/>
        <Metric/>
@@ -27,7 +29,8 @@ function App() {
 
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route index element={<Dashboard />} />
+        <Route path="/users" element={<Users />} />
       </Route>
     </Routes>
        
