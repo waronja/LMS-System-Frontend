@@ -12,6 +12,7 @@ import Signup from './components/SignUp-In/Signup';
 import Students from './components/Student/Students';
 import Instructor from './components/Instructor/Instructor';
 import Courses from './components/Course/Courses';
+import InstructorForm from './components/Instructor/InstructorForm';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/courses" element={<Courses/>} />
         <Route path="/students" element={<Students/>} />
         <Route path="/instructors" element={<Instructor/>} />
+        <Route path="/instructorform" element={<InstructorForm/>} />
        
     </Routes>
        
