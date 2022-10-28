@@ -1,16 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import SideMenu from './components/SOSideMenu';
+import InSideMenu from './components/InSideMenu';
 import './Layout.css';
 
-function Layout() {
+function InLayout() {
   return (
  
     <div className="Layout">
-      <SideMenu />
+      <InSideMenu />
       <Outlet />
     </div>
   )
 }
-
-export default Layout
