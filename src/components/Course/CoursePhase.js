@@ -1,6 +1,7 @@
 import React from 'react'
 import CourseResource from './CourseResource'
 
+
 function CoursePhase() {
   return (
     <div>

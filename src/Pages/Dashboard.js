@@ -5,6 +5,7 @@ import StudentDashSummary from '../components/Dashboard/StudentDashSummary'
 import Metric from '../components/Metric'
 import Layout from '../Layout'
 import './Dashboard.css'
+import CourseDetails from '../components/Course/CourseDetails'
 
 
 const Dashboard = () => {
@@ -19,6 +20,12 @@ const Dashboard = () => {
             <InstructorDashSummary/>
             <CourseDashSummary/>
             <StudentDashSummary/>
+          </div>
+
+          <div>
+
+            <CourseDetails/>
+            
           </div>
       </div>
       
