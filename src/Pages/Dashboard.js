@@ -13,7 +13,14 @@ const Dashboard = () => {
 
       <Layout/>
       <div>
-         <Metric/>
+          <div className = "metriccontainer">
+
+            <Metric/>
+            <Metric/>
+            <Metric/>
+            
+          </div>
+         
 
           <div className='dashboardcomponents'>
             <InstructorDashSummary/>

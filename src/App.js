@@ -13,6 +13,7 @@ import Students from './components/Student/Students';
 import Instructor from './components/Instructor/Instructor';
 import Courses from './components/Course/Courses';
 import InstructorForm from './components/Instructor/InstructorForm';
+import StudentForm from './components/Student/StudentForm';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/forgot" element={<Forgot/>} />
         <Route path="/courses" element={<Courses/>} />
         <Route path="/students" element={<Students/>} />
+        <Route path="/studentform" element={<StudentForm/>} />
         <Route path="/instructors" element={<Instructor/>} />
         <Route path="/instructorform" element={<InstructorForm/>} />
        

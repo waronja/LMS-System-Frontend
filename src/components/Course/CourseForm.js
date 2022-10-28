@@ -12,10 +12,10 @@ function CourseForm() {
                     <Form.Label>Course Name</Form.Label>
                     <Form.Control type="name" placeholder="Course Name" />
 
-                    <FloatingLabel controlId="floatingTextarea2" label="Comments">
+                    <FloatingLabel controlId="floatingTextarea2" label="Description">
                     <Form.Control
                       as="textarea"
-                      placeholder="Leave a comment here"
+                      placeholder="A short description of the course"
                       style={{ height: '100px' }}
                     />
                   </FloatingLabel>
