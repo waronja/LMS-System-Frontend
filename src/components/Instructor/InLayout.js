@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import InSideMenu from './components/InSideMenu';
-import './Layout.css';
+// import './Layout.css';
 
 function InLayout() {
   return (
@@ -10,5 +10,6 @@ function InLayout() {
       <InSideMenu />
       <Outlet />
     </div>
-  )
+  );
 }
+export default InLayout

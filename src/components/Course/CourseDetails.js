@@ -1,5 +1,5 @@
 import React from 'react'
-//import CoursePhase from './CoursePhase'
+import CoursePhase from './CoursePhase'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
@@ -9,7 +9,7 @@ function CourseDetails() {
   return (
     <div>
 
-      <div>Course Name : Geeks UI - Design & Development </div>
+      <div> Course Name : Geeks UI - Design & Development </div>
        <Tabs
         defaultActiveKey="profile"
         id="justify-tab-example"
@@ -20,7 +20,7 @@ function CourseDetails() {
           Overview 
         </Tab>
         <Tab eventKey="phases" title="Phases">
-          Phases
+          <CoursePhase/>
         </Tab>
         <Tab eventKey="files" title="Files">
           Files

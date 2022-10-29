@@ -1,13 +1,20 @@
 import React from 'react'
-import './InSideMenu.css'
+import './InDashboard.css'
 import InSideMenu from './InSideMenu'
+import CourseDetails from '../Course/CourseDetails'
 
 const InDashboard = () => {
   return (
     <div>
+
+        <div className='Layout'>
+          <InSideMenu/>
+          <h3>Instructor</h3>
+          <CourseDetails/>
+        </div>
         
-        <InSideMenu/>
-        <h3>Instructor</h3>
+        
+        
     </div>
   )
 }
