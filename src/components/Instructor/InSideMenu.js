@@ -11,15 +11,15 @@ export default function InSideMenu() {
         <ul className="nav nav-pills flex-column mb-auto">
             <li>
                 <Link to="/indashboard" className="nav-link text-white">
-                My Dashboard
+                Home
                 </Link>
             </li>
          
-            <li>
+            {/* <li>
             <Link to="/incourses" className="nav-link text-white">
                 Courses
                 </Link>
-            </li>
+            </li> */}
         </ul>
     </div>
     )

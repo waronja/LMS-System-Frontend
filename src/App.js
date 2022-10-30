@@ -15,7 +15,8 @@ import Courses from './components/Course/Courses';
 import InstructorForm from './components/Instructor/InstructorForm';
 import StudentForm from './components/Student/StudentForm';
 import InDashboard from './components/Instructor/InDashboard';
-import CourseDetails from './components/Course/CourseDetails';
+// import CourseDetails from './components/Course/CourseDetails';
+import InCourseDetails from './components/Instructor/InCourseDetails';
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
         <Route path="/instructors" element={<Instructor/>} />
         <Route path="/instructorform" element={<InstructorForm/>} />
         <Route path="/indashboard" element={<InDashboard/>} />
-        <Route path="/incoursedetails" element={<CourseDetails/>} />
+        <Route path="/incoursedetails" element={<InCourseDetails/>} />
+        
        
     </Routes>
        

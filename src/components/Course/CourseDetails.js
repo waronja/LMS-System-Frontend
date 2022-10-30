@@ -2,6 +2,7 @@ import React from 'react'
 import CoursePhase from './CoursePhase'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import CourseStudents from './CourseStudents';
 
 
 
@@ -26,7 +27,7 @@ function CourseDetails() {
           Files
         </Tab>
         <Tab eventKey="students" title="Students">
-          Students
+          <CourseStudents/>
         </Tab>
        </Tabs>
      </div>

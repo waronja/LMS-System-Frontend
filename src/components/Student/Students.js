@@ -20,6 +20,11 @@ const Students = () => {
             <CardGroup>
 
               <UserCard/>
+              <UserCard/>
+              <UserCard/>
+              <UserCard/>
+              <UserCard/>
+              <UserCard/>
 
           </CardGroup>
 
