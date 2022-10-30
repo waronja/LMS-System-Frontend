@@ -41,16 +41,16 @@ function CreateCourseForm() {
 
 
 
-                    {/* <Form>
+                    <Form>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group as={Col} controlId="formGridName">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control type="text" placeholder="Course Name" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Group as={Col} controlId="formGridSummray">
+                        <Form.Label>Course Description</Form.Label>
+                        <Form.Control type="textarea " placeholder="Course Summary" />
                         </Form.Group>
                     </Row>
 
@@ -91,7 +91,7 @@ function CreateCourseForm() {
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>
-                    </Form> */}
+                    </Form>
 
 
     </div>
