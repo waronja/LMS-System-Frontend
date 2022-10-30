@@ -1,7 +1,8 @@
 import React from 'react'
 import './InDashboard.css'
 import InSideMenu from './InSideMenu'
-import CourseDetails from '../Course/CourseDetails'
+import CourseCard from '../Course/CourseCard'
+import { CardGroup } from 'react-bootstrap';
 
 const InDashboard = () => {
   return (
@@ -9,8 +10,15 @@ const InDashboard = () => {
 
         <div className='Layout'>
           <InSideMenu/>
-          <h3>Instructor</h3>
-          <CourseDetails/>
+
+          <CardGroup>
+
+              <CourseCard/>
+              <CourseCard/>
+              <CourseCard/>
+              
+          </CardGroup>
+          
         </div>
         
         
