@@ -2,14 +2,14 @@
   /* text-align: center; */
   min-height: 800px;
   background-color: #F5F5F5;
-  margin: auto;
+  /* background-color:red; */
+  margin: 0;
 
   display: flex;
-  
-  /* justify-content: center; 
-  align-items: center; */
+  justify-content: center; 
+  align-items: center;
  
-position: relative;
+/* position: relative; */
 }
 
 

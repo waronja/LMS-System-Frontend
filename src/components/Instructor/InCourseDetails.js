@@ -4,13 +4,13 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import CourseStudents from '../Course/CourseStudents';
 import InSideMenu from './InSideMenu';
-import './InDashboard.css'
+import './InCourseDetails.css'
 
 
 
 function InCourseDetails() {
   return (
-    <div className = "Layout">
+    <div className = "incoursedetails">
 
         <InSideMenu/>
 
