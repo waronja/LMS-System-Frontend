@@ -7,7 +7,7 @@ const Forgot = () => {
     <div className='forgotcontainer'>
     <div className='forgottitle'>
        
-       <h3>fill the form to reset password</h3>
+       <h3>Fill the form to reset password</h3>
      </div>
 
        <form className='forgotform'>
