@@ -7,7 +7,7 @@ const Login = () => {
     <div className='logincontainer'>
         <div className='logintitle'>
            <h2>Sign in</h2>
-           <h3>Don't have an account? <Link to="signup" style={{textDecoration:"none"}}><span>Sign up</span></Link></h3>
+           <h3>Don't have an account? <Link to="/signup" style={{textDecoration:"none"}}><span>Sign up</span></Link></h3>
          </div>
 
            <form className='loginform'>
@@ -26,7 +26,7 @@ const Login = () => {
                         <input type="checkbox"  className='rememberme' /> 
                     </div>
                     <div>
-                        <h3>Forgot your password?</h3>
+                        <Link to="/forgotpassword" style={{textDecoration:"none"}}><span>Forgot your password?</span></Link>
                     </div>
                 </div>
             
