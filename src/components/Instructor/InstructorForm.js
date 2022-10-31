@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 // import Layout from '../../Layout'
 
 function InstructorForm() {
+    
   return (
     <div>
           {/* <Layout/> */}

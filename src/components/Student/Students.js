@@ -7,6 +7,15 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 const Students = () => {
+   const [students, setStudents] = useState([]);
+
+  useEffect(() => {
+    fetch("https://virtual-backend-app.herokuapp.com/students")
+      .then((r) => r.json())
+      .then((students) => {
+        setCommodities(students);
+      });
+  }, []);
   return (
     <div className ="studentsContainer">
 
@@ -18,13 +27,18 @@ const Students = () => {
             <Link to = "/studentform"><Button type="submit">Add Student + </Button>{' '}</Link>
 
             <CardGroup>
+           <section>
+          {students.map((student) => (
+          <UserCard key={student.id} student={student} />
+          ))}
+           </section>
 
+              {/* <UserCard/>
               <UserCard/>
               <UserCard/>
               <UserCard/>
               <UserCard/>
-              <UserCard/>
-              <UserCard/>
+              <UserCard/> */}
 
           </CardGroup>
 
