@@ -9,8 +9,13 @@ function InstructorForm() {
             <Form>
 
                 <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Label>Full Name</Form.Label>
-                    <Form.Control type="name" placeholder="Instructor's Full Name" />
+                    <Form.Label>First Name</Form.Label>
+                    <Form.Control type="name" placeholder="Instructor's First Name" />
+                    
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicName">
+                    <Form.Label>Last Name</Form.Label>
+                    <Form.Control type="name" placeholder="Instructor's First Name" />
                     
                 </Form.Group>
 
@@ -23,6 +28,12 @@ function InstructorForm() {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Confirm Password</Form.Label>
+                    <Form.Control type="password" placeholder="Confirm password" />
+                </Form.Group>
+
 
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Send Invite To Mail" />

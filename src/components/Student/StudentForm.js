@@ -9,8 +9,14 @@ function StudentForm() {
         <Form>
 
                 <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Label>Full Name</Form.Label>
-                    <Form.Control type="name" placeholder="Student's Full Name" />
+                    <Form.Label>First Name</Form.Label>
+                    <Form.Control type="name" placeholder="Student's First Name" />
+                    
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicName">
+                    <Form.Label>Last Name</Form.Label>
+                    <Form.Control type="name" placeholder="Student's Last Name" />
                     
                 </Form.Group>
 
@@ -22,6 +28,11 @@ function StudentForm() {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+               
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Confirm Password</Form.Label>
+                    <Form.Control type="password" placeholder="Confirm password" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
