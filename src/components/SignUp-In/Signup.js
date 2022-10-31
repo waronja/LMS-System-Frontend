@@ -41,7 +41,7 @@ const Signup = () => {
                </div>
                  
            </form>
-           <h5>Already have an account?<Link to="/" style={{textDecoration:"none"}}><span>Sign in</span></Link></h5>
+           <h5>Already have an account?<Link to="/" style={{textDecoration:"none"}}> <span>Sign in</span></Link></h5>
 
     </div>
   )
