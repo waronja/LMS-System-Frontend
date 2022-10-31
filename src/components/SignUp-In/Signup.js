@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Signup.css"
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   return (
     <div className='signupcontainer'>
         <div className='logintitle'>
            <h2>Sign up</h2>
-           <h3>Already have an account? <span>Sign in</span></h3>
+           <h3>Already have an account?  <Link to="/" style={{textDecoration:"none"}}><span>Sign in</span></Link></h3>
          </div>
 
            <form className='loginform'>
