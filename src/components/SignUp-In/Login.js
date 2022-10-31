@@ -7,26 +7,26 @@ const Login = () => {
     <div className='logincontainer'>
         <div className='logintitle'>
            <h2>Sign in</h2>
-           <h3>Don't have an account? <Link to="/signup" style={{textDecoration:"none"}}><span>Sign up</span></Link></h3>
+          
          </div>
 
            <form className='loginform'>
               <div>
-                 <label>Username or email</label>
+                 {/* <label>Username or email</label> */}
                  <input type="text" placeholder='Username or email'/>
               </div>
               
               <div>
-                 <label>Password</label>
+                 {/* <label>Password</label> */}
                  <input type="password" placeholder='Password'/>
               </div>
                 <div className='passwordcheck'>
                     <div className='logincheckbox'>
-                         <label>Remember me</label>
+                         <h5>Remember me</h5>
                         <input type="checkbox"  className='rememberme' /> 
                     </div>
                     <div>
-                        <Link to="/forgotpassword" style={{textDecoration:"none"}}><span>Forgot your password?</span></Link>
+                        <Link to="/forgotpassword" style={{textDecoration:"none"}}><span>Forgot password?</span></Link>
                     </div>
                 </div>
             
@@ -34,6 +34,7 @@ const Login = () => {
                  <input className='loginbtn' type="submit" value="Sign in" />
                </div>
            </form>
+           <h5>Don't have an account? <Link to="/signup" style={{textDecoration:"none"}}><span>Sign up</span></Link></h5>
        
         
        

@@ -20,7 +20,7 @@ const Forgot = () => {
              <input className='loginbtn' type="submit" value="Send Reset Link" />
            </div>
        </form>
-       <h3>Return to <Link to="/"><span>Sign in</span></Link></h3>
+       <h5>Return to <Link to="/"><span>Sign in</span></Link></h5>
    
 </div>
   )
