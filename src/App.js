@@ -41,7 +41,7 @@ function App() {
         <Route path="/indashboard" element={<InDashboard/>} />
         <Route path="/incoursedetails" element={<InCourseDetails/>} />
         <Route path="/createcourse" element={<CreateCourseForm/>} />
-        <Route path="/sdashboard" element={<StDashboard/>} />
+        <Route path="/stdashboard" element={<StDashboard/>} />
         <Route path="/stcoursedetails" element={<StCourseDetails/>} />
         
        

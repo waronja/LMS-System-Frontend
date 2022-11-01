@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import './stCourseDetails.css'
+import './StCourseDetails.css'
 // import {FaHistory} from 'react-icons/fa'
 // import {FcApproval} from 'react-icons/fc'
 // import {GiProgression} from 'react-icons/gi'

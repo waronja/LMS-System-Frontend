@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import './InSideMenu.css'
 
 export default function InSideMenu() {
     return (
