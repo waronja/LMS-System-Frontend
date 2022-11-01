@@ -1,10 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Login.css"
 import { Link } from 'react-router-dom'
+import { responsivePropType } from 'react-bootstrap/esm/createUtilityClasses'
 
-const Login = () => {
+const Login = ({ onLogin }) => {
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [errors, setError] = useState([])
 
   
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    const userdets = {
+      email,
+      password
+    }
+
+    fetch("http://127.0.0.1:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(userdets)
+    }).then((res) => {
+      if (res.ok){
+        res.json().then((user) => onLogin(user))
+      }
+      else{
+        res.json().then((err) => setError(err.errors))
+      }
+    })
+    
+  }
+
+
 
   return (
     <div className='logincontainer'>
@@ -12,17 +44,18 @@ const Login = () => {
            <h2>Sign in</h2>
           
          </div>
-
-           <form className='loginform'>
+              <p>{errors}</p>
+           <form className='loginform' onSubmit={handleSubmit}>
               <div>
                  {/* <label>Username or email</label> */}
-                 <input type="text" placeholder='Username or email'/>
+                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder='Username or email'/>
               </div>
               
               <div>
                  {/* <label>Password</label> */}
-                 <input type="password" placeholder='Password'/>
+                 <input value={password} onChange={(e) => setPassword(e.target.value)}  type="password" placeholder='Password'/>
               </div>
+
                 <div className='passwordcheck'>
                     <div className='logincheckbox'>
                          <h5>Remember me</h5>

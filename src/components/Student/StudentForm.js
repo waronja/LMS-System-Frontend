@@ -52,7 +52,7 @@ function StudentForm() {
       
         setFormData({
           ...formData,
-          [e.target.id]: value,
+        //   [e.target.id]: value,
         });
       }
       

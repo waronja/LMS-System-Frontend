@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route,Routes } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Route,Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Pages/Dashboard';
 import Users from './Pages/Users';
@@ -21,13 +21,45 @@ import CreateCourseForm from './components/CreateCourseForm';
 import StCourseDetails from './components/Student/StCourseDetails';
 
 function App() {
+
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    fetch("/me")
+    .then(resp => {
+      if (resp.ok){
+        resp.json().then((user) => setUser(user))
+      }
+    })
+  }, [])
+
+  const navigate = useNavigate()
+
+
+  function onLogin(user) {
+    
+    if (!user.isadmin){
+      navigate(`/students`)
+    }
+    
+    else if (user.email === "email"){
+      navigate('/courses')
+    }
+    
+    else {
+      navigate('/dashboard')
+    }
+      
+  }
+
+
   return (
     <div className="App">
     
     
     <Routes>
       
-        <Route path="/" element={<Login/>} />
+        <Route path="/" element={<Login  onLogin={onLogin}/>} />
         <Route path="/signup" element={<Signup/>} />
         <Route path="/forgotpassword" element={<Forgot/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
