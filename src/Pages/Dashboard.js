@@ -15,6 +15,8 @@ const Dashboard = () => {
       <Layout/>
       <div>
          <Metric/>
+         <Metric/>
+         <Metric/>
 
           <div className='dashboardcomponents'>
             <InstructorDashSummary/>

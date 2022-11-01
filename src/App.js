@@ -7,7 +7,7 @@ import Users from './Pages/Users';
 import Login from './components/SignUp-In/Login';
 import Signup from './components/SignUp-In/Signup';
  import Forgot from './components/SignUp-In/Forgot';
-//  import Layout from './Layout';
+// import Layout from './Layout';
 // import Metric from './components/Metric';
 // import DashSummary from './components/Dashboard/DashSummary';
 import Students from './components/Student/Students';
