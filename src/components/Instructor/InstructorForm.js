@@ -1,12 +1,14 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+// import Layout from '../../Layout'
 
 function InstructorForm() {
   return (
     <div>
+          {/* <Layout/> */}
         
-            <Form>
+            <Form >
 
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>First Name</Form.Label>

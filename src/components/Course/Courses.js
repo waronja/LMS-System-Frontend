@@ -3,6 +3,7 @@ import React from 'react'
 import CardGroup from 'react-bootstrap/CardGroup';
 import Layout from '../../Layout';
 import UserCard from '../UserCard';
+// import './Courses.css'
 
 const Courses = () => {
   return (

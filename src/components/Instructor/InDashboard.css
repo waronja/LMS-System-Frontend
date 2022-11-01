@@ -1,3 +1,5 @@
 .Layout {
     display: flex;
+    /* background-color: blue; */
+    max-width:100pc ;
 }
