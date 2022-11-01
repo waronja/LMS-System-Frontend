@@ -11,6 +11,7 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-floating-button": "^1.1.1",
+    "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "^0.7.0",
     "web-vitals": "^2.1.4"

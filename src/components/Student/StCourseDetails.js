@@ -6,10 +6,10 @@ import './stCourseDetails.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const InstructorDetails = ()  => {
+const StCourseDetails = ()  => {
   const [users, setUsers] = useState([])
   const getUsers = async () => {
-      const response = await fetch("http://127.0.0.1:3000/educators");
+      const response = await fetch("http://127.0.0.1:3000/students");
       const FinalData = await response.json();
       setUsers(FinalData)
       console.log(FinalData)
@@ -35,7 +35,6 @@ const InstructorDetails = ()  => {
                           <div className="card_inner">
                               <img src={curElem.last_name} alt="" />
                               <div className="userName">{curElem.first_name}</div>
-                               <div className="userName">{curElem.last_name}</div>
                               <div className="userUrl">{curElem.email}</div>
                               <div className="detail-box">
 
@@ -117,4 +116,4 @@ const InstructorDetails = ()  => {
 //   )
 // }
 
-export default InstructorDetails
+export default StCourseDetails
