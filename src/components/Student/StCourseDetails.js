@@ -9,9 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const StCourseDetails = ()  => {
   const [users, setUsers] = useState([])
   const getUsers = async () => {
-      const response = await fetch("https://virtual-backend-app.herokuapp.com/courses");
+      const response = await fetch("http://127.0.0.1:3000/students");
       const FinalData = await response.json();
       setUsers(FinalData)
+      console.log(FinalData)
   }
 
 
@@ -22,6 +23,7 @@ const StCourseDetails = ()  => {
 
 
   return (
+    
 
       <div className="container">
 
