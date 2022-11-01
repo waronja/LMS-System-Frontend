@@ -18,6 +18,7 @@ import InDashboard from './components/Instructor/InDashboard';
 // import CourseDetails from './components/Course/CourseDetails';
 import InCourseDetails from './components/Instructor/InCourseDetails';
 import CreateCourseForm from './components/CreateCourseForm';
+import StCourseDetails from './components/Student/StCourseDetails';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/indashboard" element={<InDashboard/>} />
         <Route path="/incoursedetails" element={<InCourseDetails/>} />
         <Route path="/createcourse" element={<CreateCourseForm/>} />
+        <Route path="/StCourseDetails" element={<StCourseDetails/>} />
         
        
     </Routes>
