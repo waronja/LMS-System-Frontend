@@ -6,8 +6,6 @@ import Metric from '../components/Metric'
 import Layout from '../Layout'
 import './Dashboard.css'
 
-
-
 const Dashboard = () => {
   return (
     <div className="dashboard">
