@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const StCourseDetails = ()  => {
   const [users, setUsers] = useState([])
   const getUsers = async () => {
+
+    // The line below should query course id not all courses.
       const response = await fetch("https://virtual-backend-app.herokuapp.com/courses");
       const FinalData = await response.json();
       setUsers(FinalData)
