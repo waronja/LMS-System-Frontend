@@ -3,11 +3,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 function StudentForm() {
-  const [first_name, setFirstName] =useState("");
-  const [last_name, setLastName] =useState("");
-  const [email, setEmail] =useState("");
-  const [password, setPassword] = useState("");
-  const [passwordConfirmation, setPasswordConfirmation] = useState("");
+  
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -17,7 +13,8 @@ function StudentForm() {
     last_name: "",
     email: "",
     password: "",
-    password_confirmation: passwordConfirmation,
+    password_confirmation:"",
+    school_id: "",
     
     
   });
@@ -34,7 +31,7 @@ function StudentForm() {
     })
 
     .then((resp) => resp.json())
-    .then((formData) =>console.log(formData));
+    .then((formData) =>setFormData(formData));
     // .then((r) => {
     //   setIsLoading(false);
     //   if (r.ok) {
@@ -52,57 +49,68 @@ function StudentForm() {
       
         setFormData({
           ...formData,
-        //   [e.target.id]: value,
+          [e.target.id]:e.target.value,
         });
       }
+      console.log(formData)
       
   return (
     <div>
         <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicName">
+                <Form.Group className="mb-3" >
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="first_name"
                      placeholder="Student's First Name"
-                     value ={formData.first_name}
+                     value={formData.first_name}
                      onChange={handleChange}
                      id="first_name"
                      autoComplete="off"
                     />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicName">
+                <Form.Group className="mb-3" >
                     <Form.Label>Last Name</Form.Label>
                     <Form.Control type="last_name" placeholder="Student's Last Name"
-                      value ={formData.last_name}
+                      value={formData.last_name}
                       onChange={handleChange}
-                    //  Id="last_name"
+                      id="last_name"
                      autoComplete="off"
                      />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" >
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Student's Email"
-                    //  id="email"
+                     id="email"
                      autoComplete="off"
-                     value ={formData.email}
+                     value={formData.email}
                      onChange={handleChange}/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" >
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password"
-                    //  id="password"
-                    value ={formData.password}
+                     id="password"
+                    value={formData.password}
                     onChange={handleChange}
                      autoComplete="current-password"
                      />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" >
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control type="password"
                     placeholder="Confirm password"
-                //    id="password_confirmation"
-                value ={formData.passwordConfirmation}
-                onChange={handleChange}
+                   id="password_confirmation"
+                   value={formData.passwordConfirmation}
+                   onChange={handleChange}
                     autoComplete="current-password"
+                    />
+                </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>School</Form.Label>
+                    <Form.Control type=""
+                    placeholder="School_id"
+                   id="school_id"
+                   value={formData.school_id}
+                   onChange={handleChange}
+                    autoComplete=""
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">

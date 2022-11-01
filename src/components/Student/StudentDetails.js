@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const StudentDetails = ()  => {
     const [users, setUsers] = useState([])
     const getUsers = async () => {
-        const response = await fetch("https://api.github.com/users");
+        const response = await fetch("http://127.0.0.1:3000/students");
         const FinalData = await response.json();
         setUsers(FinalData)
     }
