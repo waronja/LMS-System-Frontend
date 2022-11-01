@@ -19,8 +19,7 @@ function InCourseDetails() {
             <Tabs
                 defaultActiveKey="profile"
                 id="justify-tab-example"
-                className="mb-3"
-                justify>
+                className="mb-3">
 
                 <Tab eventKey="overview" title="Overview">
                 Overview 
