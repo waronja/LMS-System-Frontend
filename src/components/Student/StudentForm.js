@@ -55,7 +55,7 @@ function StudentForm() {
   return (
     <div>
         <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicName">
+                <Form.Group className="mb-3" >
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="first_name"
                      placeholder="Student's First Name"
@@ -65,7 +65,7 @@ function StudentForm() {
                      autoComplete="off"
                     />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicName">
+                <Form.Group className="mb-3" >
                     <Form.Label>Last Name</Form.Label>
                     <Form.Control type="last_name" placeholder="Student's Last Name"
                       value={formData.last_name}
@@ -74,7 +74,7 @@ function StudentForm() {
                      autoComplete="off"
                      />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" >
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Student's Email"
                      id="email"
@@ -82,7 +82,7 @@ function StudentForm() {
                      value={formData.email}
                      onChange={handleChange}/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" >
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password"
                      id="password"
@@ -91,7 +91,7 @@ function StudentForm() {
                      autoComplete="current-password"
                      />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" >
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control type="password"
                     placeholder="Confirm password"
