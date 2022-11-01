@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import './InSideMenu.css'
+import './StSideMenu.css'
+
 
 export default function InSideMenu() {
     return (
@@ -10,8 +11,8 @@ export default function InSideMenu() {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
             <li>
-                <Link to="/indashboard" className="nav-link text-white">
-                 Dashboard
+                <Link to="/stdashboard" className="nav-link text-white">
+                 Home
                 </Link>
             </li>
          
