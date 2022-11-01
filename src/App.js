@@ -38,16 +38,16 @@ function App() {
 
   function onLogin(user) {
     
-    if (!user.isadmin){
+    if (user.isadmin){
       navigate(`/students`)
     }
     
     else if (user.email === "email"){
-      navigate('/courses')
+      navigate('/indashboard')
     }
     
     else {
-      navigate('/dashboard')
+      navigate('/courses')
     }
       
   }
