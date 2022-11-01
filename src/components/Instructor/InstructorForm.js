@@ -106,7 +106,7 @@ function InstructorForm() {
                     <Form.Check type="checkbox" label="Send Invite To Mail" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                   {isLoading ? "Loading..." : "Add Student"}
+                   {isLoading ? "Loading..." : "Add Instructor"}
                 </Button>
                 <Form.Group>
                     {errors.map((err) => (

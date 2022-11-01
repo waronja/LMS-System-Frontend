@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+
 import { Route,Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Pages/Dashboard';
@@ -21,6 +22,7 @@ import CreateCourseForm from './components/CreateCourseForm';
 import StCourseDetails from './components/Student/StCourseDetails';
 
 function App() {
+  
   return (
     <div className="App">
     
