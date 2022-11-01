@@ -1,5 +1,5 @@
 import React from 'react'
-import UserCard from '../UserCard';
+import StudentCard from '../StudentCard';
 import { CardGroup } from 'react-bootstrap';
 
 function CourseStudents() {
@@ -7,9 +7,9 @@ function CourseStudents() {
     <div>
         <CardGroup>
 
-              <UserCard/>
-              <UserCard/>
-              <UserCard/>
+              <StudentCard/>
+              <StudentCard/>
+              <StudentCard/>
 
           </CardGroup>
 

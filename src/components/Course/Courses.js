@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 // import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Layout from '../../Layout';
-import UserCard from '../UserCard';
+import CourseCard from '../CourseCard';
 // import './Courses.css'
 
 const Courses = () => {
@@ -48,7 +48,7 @@ const Courses = () => {
 
           <CardGroup>
 
-              <UserCard/>
+              <CourseCard/>
               
           </CardGroup>
 
