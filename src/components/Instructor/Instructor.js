@@ -1,7 +1,7 @@
 import React from 'react'
 // import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import UserCard from '../UserCard';
+import InstructorCard from '../InstructorCard';
 import Layout from '../../Layout';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
@@ -26,7 +26,7 @@ const Instructor = () => {
 
           <CardGroup>
 
-            <UserCard/>
+            <InstructorCard/>
 
           </CardGroup>
 
