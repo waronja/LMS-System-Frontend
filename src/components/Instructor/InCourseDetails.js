@@ -22,7 +22,7 @@ function InCourseDetails() {
                 className="mb-3">
 
                 <Tab eventKey="overview" title="Overview">
-                Overview 
+                Give a high-level overview of the product / project you re working on, its goals, etc..Elaborate on the target audience of your project/product, link out to additional resources. Vivamus pretium laoreet massa eu euismod. Nunc accumsan id odio sed luctus. Suspendisse a lacus sed ex consequat interdum quis non eros. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis labore nam fuga sapiente vel iste animiicta ab at placeat sint.
                 </Tab>
 
                 <Tab eventKey="phases" title="Phases">
