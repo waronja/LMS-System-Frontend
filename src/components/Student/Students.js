@@ -1,9 +1,10 @@
 import React from 'react'
+import { useEffect,useState } from 'react';
 import "./User.css";
 import Layout from '../../Layout';
 import UserCard from '../UserCard';
-import { CardGroup } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+// import { CardGroup } from 'react-bootstrap';
+// import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 const Students = () => {
@@ -13,18 +14,18 @@ const Students = () => {
     fetch("https://virtual-backend-app.herokuapp.com/students")
       .then((r) => r.json())
       .then((students) => {
-        setCommodities(students);
+        setStudents(students);
       });
   }, []);
   return (
-    <div className ="studentsContainer">
+    <div className="studentsContainer">
 
         <Layout/>
         <div>
 
             <h5> Here is a List Of Students </h5>
 
-            <Link to = "/studentform"><Button type="submit">Add Student + </Button>{' '}</Link>
+            <Link to="/studentform"><Button type="submit">Add Student + </Button>{' '}</Link>
 
             <CardGroup>
            <section>
