@@ -11,15 +11,15 @@ export default function InSideMenu() {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
             <li>
-                <Link to="/indashboard" className="nav-link text-white">
-                 Dashboard
+                <Link to="/stdashboard" className="nav-link text-white">
+                 Home
                 </Link>
             </li>
          
             <li>
-            <Link to="/indashboard" className="nav-link text-white">
+            {/* <Link to="/indashboard" className="nav-link text-white">
                 Courses
-                </Link>
+                </Link> */}
             </li>
         </ul>
     </div>

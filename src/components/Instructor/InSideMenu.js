@@ -16,9 +16,9 @@ export default function InSideMenu() {
             </li>
          
             <li>
-            <Link to="/indashboard" className="nav-link text-white">
+            {/* <Link to="/indashboard" className="nav-link text-white">
                 Courses
-                </Link>
+                </Link> */}
             </li>
         </ul>
     </div>

@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+
 import { Route,Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Pages/Dashboard';
@@ -6,7 +7,7 @@ import Users from './Pages/Users';
 import Login from './components/SignUp-In/Login';
 import Signup from './components/SignUp-In/Signup';
  import Forgot from './components/SignUp-In/Forgot';
-//  import Layout from './Layout';
+// import Layout from './Layout';
 // import Metric from './components/Metric';
 // import DashSummary from './components/Dashboard/DashSummary';
 import Students from './components/Student/Students';
@@ -21,6 +22,7 @@ import CreateCourseForm from './components/CreateCourseForm';
 import StCourseDetails from './components/Student/StCourseDetails';
 import StDashboard from './components/Student/StDashboard';
 function App() {
+  
   return (
     <div className="App">
     
