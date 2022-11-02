@@ -95,7 +95,7 @@ function InstructorForm() {
                 </Form.Group>
                 <Form.Group className="mb-3" >
                     <Form.Label>School</Form.Label>
-                    <Form.Control type=""
+                    <Form.Control type="School_id"
                     placeholder="2"
                    id="school_id"
                    value={formData.school_id}
