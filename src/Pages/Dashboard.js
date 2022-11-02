@@ -6,15 +6,17 @@ import Metric from '../components/Metric'
 import Layout from '../Layout'
 import './Dashboard.css'
 
-
-
 const Dashboard = () => {
   return (
     <div className="dashboard">
 
       <Layout/>
       <div>
+        <div className='metriccontainer'>
+        <Metric/>
          <Metric/>
+         <Metric/>
+        </div>
 
           <div className='dashboardcomponents'>
             <InstructorDashSummary/>

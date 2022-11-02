@@ -1,28 +1,26 @@
 import React from 'react'
-import './InDashboard.css'
-import InSideMenu from './InSideMenu';
+import './StDashboard.css'
+import StSideMenu from './StSideMenu';
 import CourseCard from '../Course/CourseCard';
 import { CardGroup } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+
 
 const InDashboard = () => {
   return (
     <div>
 
         <div className='Layout'>
-          <InSideMenu/>
+          <StSideMenu/>
           
           <CardGroup>
 
               <CourseCard/>
               <CourseCard/>
               <CourseCard/>
-              {/* <CourseCard/>
-              <CourseCard/> */}
+              <CourseCard/>
+              <CourseCard/>
 
           </CardGroup>
-          <Link to = "/createcourse"><Button type="submit">Add New Course + </Button>{' '}</Link>
           
         </div>
         

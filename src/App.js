@@ -7,7 +7,7 @@ import Users from './Pages/Users';
 import Login from './components/SignUp-In/Login';
 import Signup from './components/SignUp-In/Signup';
  import Forgot from './components/SignUp-In/Forgot';
-//  import Layout from './Layout';
+// import Layout from './Layout';
 // import Metric from './components/Metric';
 // import DashSummary from './components/Dashboard/DashSummary';
 import Students from './components/Student/Students';
@@ -20,7 +20,8 @@ import InDashboard from './components/Instructor/InDashboard';
 import InCourseDetails from './components/Instructor/InCourseDetails';
 import CreateCourseForm from './components/CreateCourseForm';
 import StCourseDetails from './components/Student/StCourseDetails';
-
+import StDashboard from './components/Student/StDashboard';
+import WatchCourses from './components/Course/WatchCourses';
 function App() {
 
   const [user, setUser] = useState(null)
@@ -40,10 +41,10 @@ function App() {
   function onLogin(user) {
     
     if (user.isadmin){
-      navigate(`/students`)
+      navigate(`/dashboard`)
     }
     
-    else if (user.email === "email"){
+    else if (user.isprof === true){
       navigate('/indashboard')
     }
     
@@ -74,7 +75,9 @@ function App() {
         <Route path="/indashboard" element={<InDashboard/>} />
         <Route path="/incoursedetails" element={<InCourseDetails/>} />
         <Route path="/createcourse" element={<CreateCourseForm/>} />
-        <Route path="/StCourseDetails" element={<StCourseDetails/>} />
+        <Route path="/stdashboard" element={<StDashboard/>} />
+        <Route path="/stcoursedetails" element={<StCourseDetails/>} />
+        <Route path="/watchCourses" element={<WatchCourses/>} />
         
        
     </Routes>
