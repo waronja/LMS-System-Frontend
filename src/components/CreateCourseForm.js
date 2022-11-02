@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
 
@@ -14,6 +15,8 @@ function CreateCourseForm() {
         school_id: "",
         student_id: "",
     });
+
+    const navigate = useNavigate()
 
     function handleSubmit(e){
         e.preventDefault();
@@ -30,6 +33,8 @@ function CreateCourseForm() {
 
         .then((resp) => resp.json())
         .then((formData) =>setFormData(formData));
+
+        navigate('/indashboard')
     }
 
     function handleChange(e) {

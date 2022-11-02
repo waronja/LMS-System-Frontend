@@ -1,7 +1,7 @@
 import React from 'react'
 import './InDashboard.css'
 import InSideMenu from './InSideMenu';
-import CourseCard from '../Course/CourseCard';
+import CourseCard from '../CourseCard';
 import { CardGroup } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
@@ -12,16 +12,12 @@ const InDashboard = () => {
 
         <div className='Layout'>
           <InSideMenu/>
+            <CardGroup>
+
+              <CourseCard/>
           
-          <CardGroup>
-
-              <CourseCard/>
-              <CourseCard/>
-              <CourseCard/>
-              {/* <CourseCard/>
-              <CourseCard/> */}
-
-          </CardGroup>
+            </CardGroup>
+          
           <Link to = "/createcourse"><Button type="submit">Add New Course + </Button>{' '}</Link>
           
         </div>
