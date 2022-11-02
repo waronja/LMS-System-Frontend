@@ -20,8 +20,6 @@ const Students = () => {
             <CardGroup>
 
               <StudentCard/>
-              <StudentCard/>
-              <StudentCard/>
 
           </CardGroup>
 
