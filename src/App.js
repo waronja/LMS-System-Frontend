@@ -21,6 +21,7 @@ import InCourseDetails from './components/Instructor/InCourseDetails';
 import CreateCourseForm from './components/CreateCourseForm';
 import StCourseDetails from './components/Student/StCourseDetails';
 import StDashboard from './components/Student/StDashboard';
+import WatchCourses from './components/Course/WatchCourses';
 function App() {
   
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/createcourse" element={<CreateCourseForm/>} />
         <Route path="/stdashboard" element={<StDashboard/>} />
         <Route path="/stcoursedetails" element={<StCourseDetails/>} />
+        <Route path="/watchCourses" element={<WatchCourses/>} />
         
        
     </Routes>

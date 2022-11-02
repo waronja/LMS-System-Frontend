@@ -5,17 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BsShare } from 'react-icons/bs'
 import { BsFillBookmarkDashFill } from 'react-icons/bs'
-import {
-    CDBSidebar,
-    CDBSidebarContent,
-    CDBSidebarHeader,
-    CDBSidebarMenu,
-    CDBSidebarMenuItem,
-    CDBSidebarFooter,
-} from 'cdbreact';
 
 
-function StudentDetails() {
+function WatchCourses() {
     return (
         <div className="StudentV">
             <h1>Robotics Instrumentation 101</h1>
@@ -47,31 +39,10 @@ function StudentDetails() {
                 et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.  discovered the undoubtable source.<br />
                 This book is a treatise on the theory of ethics, very popular during the very popular during the<br />
                 Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", very popular during the<br />
-                comes from a line in section 1.10.32.</p>
-
-            <CDBSidebar className="side" style={{ }}>
-                <CDBSidebarHeader prefix={<i className="fa fa-bars" />}></CDBSidebarHeader>
-                <CDBSidebarContent>
-                    <CDBSidebarMenu>
-                        <CDBSidebarMenuItem icon="th-large">Dashboard</CDBSidebarMenuItem>
-                        <CDBSidebarMenuItem icon="sticky-note">Courses</CDBSidebarMenuItem>
-                        <CDBSidebarMenuItem icon="book">References</CDBSidebarMenuItem>
-                        <CDBSidebarMenuItem icon="chart-line" iconType="solid">Metrics</CDBSidebarMenuItem>
-                        <CDBSidebarMenuItem icon="gamepad">Take a break</CDBSidebarMenuItem>
-                    </CDBSidebarMenu>
-                </CDBSidebarContent>
-
-                <CDBSidebarFooter style={{ textAlign: 'center' }}>
-                    <div
-                        className="sidebar-btn-wrapper"
-                        style={{ padding: '20px 5px' }}
-                    >
-                        Do hard things💪
-                    </div>
-                </CDBSidebarFooter>
-            </CDBSidebar>
+                comes from a line in section 1.10.32.
+            </p>
         </div>
     )
 }
 
-export default StudentDetails
+export default WatchCourses
