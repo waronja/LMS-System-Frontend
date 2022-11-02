@@ -6,7 +6,7 @@ function InstructorCard({educator}) {
   return (
     <div>
      
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '15rem' }}>
       <Card.Body>
         <Card.Title>{educator.first_name}</Card.Title>
         <Card.Title>{educator.last_name}</Card.Title>

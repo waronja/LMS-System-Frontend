@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
+import { CardGroup } from 'react-bootstrap';
 // import Card from 'react-bootstrap/Card';
 import Layout from '../../Layout';
 import CourseCard from '../CourseCard';
-// import './Courses.css'
+import './Courses.css'
 
 const Courses = () => {
   const [courses, setCourses] = useState([])
@@ -18,9 +19,13 @@ const Courses = () => {
 
   return (
     <div className='studentsContainer'>
+
         <Layout/>
+        
           <div>
-            <p>
+            
+        <CardGroup>
+
             {
         courses.map((course) => {
           return (
@@ -29,15 +34,11 @@ const Courses = () => {
           )
         })
       }
+          </CardGroup>
 
-            </p>
           </div>
-
-          {/* <CardGroup>
-
-              <CourseCard/>
               
-          </CardGroup> */}
+          
 
         </div>
 
