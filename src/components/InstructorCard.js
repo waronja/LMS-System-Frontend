@@ -2,15 +2,16 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function InstructorCard() {
+function InstructorCard({educator}) {
   return (
     <div>
      
     <Card style={{ width: '18rem' }}>
       <Card.Body>
-        <Card.Title>First + Second Name</Card.Title>
+        <Card.Title>{educator.first_name}</Card.Title>
+        <Card.Title>{educator.last_name}</Card.Title>
         <Card.Text>
-          Student's Email
+         {educator.email}
         </Card.Text>
         <Button variant="primary">Delete</Button>
       </Card.Body>
