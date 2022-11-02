@@ -54,16 +54,15 @@
 // }
 
 
-
-/* import React from 'react'
+import React from 'react'
 import CoursePhase from '../Course/CoursePhase';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import InSideMenu from './StSideMenu';
-import './StCourseDetails.css' */
+import './StCourseDetails.css' 
 
 
-/* function StCourseDetails() {
+function StCourseDetails() {
   return (
     <div className = "stcoursedetails">
 
@@ -95,4 +94,4 @@ import './StCourseDetails.css' */
 
   )
 }
- export default StCourseDetails */
+ export default StCourseDetails 
