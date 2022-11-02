@@ -44,7 +44,7 @@ const Login = ({ onLogin }) => {
            <h2>Sign in</h2>
           
          </div>
-              <p>{errors}</p>
+              <p style={{color: "red"}}>{errors}</p>
            <form className='loginform' onSubmit={handleSubmit}>
               <div>
                  {/* <label>Username or email</label> */}
