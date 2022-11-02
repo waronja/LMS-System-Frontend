@@ -8,7 +8,7 @@ import CourseCard from '../CourseCard';
 const Courses = () => {
   const [courses, setCourses] = useState([])
     const getUsers = async () => {
-        const response = await fetch("http://127.0.0.1:3000/courses");
+        const response = await fetch("https://virtual-backend-app.herokuapp.com/courses");
         const FinalData = await response.json();
         setCourses(FinalData)
         console.log(FinalData)
@@ -32,7 +32,7 @@ const Courses = () => {
                               <div className="userName">Name: {course.name}</div>
                               <div className="userName">Description: {course.description}</div>
                               {/* <div className="userName">{course.school.name}</div> */}
-                              <div className="userName">{course.school.description}</div>
+                              {/* <div className="userName">{course.school.description}</div> */}
                               {/* <div className="userUrl">{course.student.first_name}</div> */}
                               {/* <div className="userUrl">{course.student.last_name}</div> */}
                               {/* <div className="userUrl">{course.student.email}</div> */}
