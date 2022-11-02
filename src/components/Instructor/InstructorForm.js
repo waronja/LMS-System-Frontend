@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 function InstructorForm() {
   
-  const [errors, setErrors] = useState([]);
+  const [error, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
 
@@ -14,6 +14,7 @@ function InstructorForm() {
     email: "",
     password: "",
     password_confirmation:"",
+    school_id: ""
     
     
   });
@@ -21,7 +22,7 @@ function InstructorForm() {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("http://localhost:3000/educator", {
+    fetch("https://virtual-backend-app.herokuapp.com/educator", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +31,7 @@ function InstructorForm() {
     })
 
     .then((resp) => resp.json())
-    .then((formData) =>console.log(formData));
+    .then((data) =>setFormData(data));
     // .then((r) => {
     //   setIsLoading(false);
     //   if (r.ok) {
@@ -102,6 +103,15 @@ function InstructorForm() {
                     autoComplete="current-password"
                     />
                 </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>School ID</Form.Label>
+                    <Form.Control type="number"
+                    placeholder="School ID"
+                   id="school_id"
+                   value={formData.school_id}
+                   onChange={handleChange}
+                    />
+                </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Send Invite To Mail" />
                 </Form.Group>
@@ -109,7 +119,7 @@ function InstructorForm() {
                    {isLoading ? "Loading..." : "Add Instructor"}
                 </Button>
                 <Form.Group>
-                    {errors.map((err) => (
+                    {error.map((err) => (
                    <error key={err}>{err}</error>
                      ))}
                 </Form.Group>

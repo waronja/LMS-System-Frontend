@@ -6,7 +6,7 @@ function StudentCard() {
   const [students, setStudents] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/students')
+    fetch('https://virtual-backend-app.herokuapp.com/students')
     .then((res) => {
       if (res.ok){
         res.json().then(data => setStudents(data))
@@ -18,7 +18,7 @@ function StudentCard() {
     <div>
      {students.map((student) => {
       return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} key={student.id}>
         <Card.Body>
           <Card.Title>{student.first_name} {student.last_name}</Card.Title>
           <Card.Text>
