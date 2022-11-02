@@ -17,7 +17,7 @@ const Instructor = () => {
         <div>
             <h3>I am an instructor </h3>
             
-            <Link to = "/instructorform"><Button type="submit">Add Instructor + </Button>{' '}</Link>
+            <Link to = "/instructorform"><Button type="submit">Add Course + </Button>{' '}</Link>
 
 
         </div>
