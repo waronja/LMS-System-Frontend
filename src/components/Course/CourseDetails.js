@@ -6,6 +6,7 @@ import CourseStudents from './CourseStudents';
 
 
 
+
 function CourseDetails() {
   return (
     <div>
