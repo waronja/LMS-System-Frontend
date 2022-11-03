@@ -2,9 +2,12 @@ import React from 'react'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
 function StudentForm() {
   
-  const [errors, setErrors] = useState([]);
+  const navigate = useNavigate()
+  // const [course, setCourse] = useState([])
+  const [error, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
 
@@ -14,6 +17,8 @@ function StudentForm() {
     email: "",
     password: "",
     password_confirmation:"",
+    school_id: "",
+    course_id: ""
     
     
   });
@@ -21,7 +26,7 @@ function StudentForm() {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("http://localhost:3000/student", {
+    fetch("https://virtual-backend-app.herokuapp.com/student", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,8 +34,13 @@ function StudentForm() {
       body: JSON.stringify(formData),
     })
 
-    .then((resp) => resp.json())
-    .then((formData) =>console.log(formData));
+    .then((resp) => {
+      if (resp.ok){
+        resp.json().then(setFormData)
+        navigate('/students')
+      }else {
+        resp.json().then(err => setErrors(err))
+      }})
     // .then((r) => {
     //   setIsLoading(false);
     //   if (r.ok) {
@@ -42,7 +52,9 @@ function StudentForm() {
     // );
 
     
+    
   }
+  console.log(formData)
 
   function handleChange(e) {
       
@@ -51,11 +63,12 @@ function StudentForm() {
           [e.target.id]:e.target.value,
         });
       }
-      console.log(formData)
-      
+
+  
   return (
     <div>
         <Form onSubmit={handleSubmit}>
+          <p>{error}</p>
                 <Form.Group className="mb-3" >
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="first_name"
@@ -102,6 +115,17 @@ function StudentForm() {
                     autoComplete="current-password"
                     />
                 </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>School ID</Form.Label>
+                    <Form.Control type=""
+                    placeholder="School_id"
+                   id="school_id"
+                   value={formData.school_id}
+                   onChange={handleChange}
+                    />
+                </Form.Group>
+
+
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Send Invite To Mail" />
                 </Form.Group>
@@ -109,9 +133,11 @@ function StudentForm() {
                    {isLoading ? "Loading..." : "Add Student"}
                 </Button>
                 <Form.Group>
-                    {errors.map((err) => (
+                    {error.map((err) => (
                    <error key={err}>{err}</error>
                      ))}
+
+                     
                 </Form.Group>
             </Form>
     </div>

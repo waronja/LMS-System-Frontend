@@ -25,7 +25,6 @@ const Instructor = () => {
 
       <div className='Layout'>
             {/* <h3>I am an instructor </h3> */}
-            <div>
             <CardGroup>
                     {
                 educators.map((educator) => {
@@ -37,11 +36,12 @@ const Instructor = () => {
               }
 
             </CardGroup>
-
-            </div>
-
+            
             <Link to = "/instructorform"><Button type="submit">Add Instructor + </Button>{' '}</Link>
 
+
+      
+           
           </div>
         
 

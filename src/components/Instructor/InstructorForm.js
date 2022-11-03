@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 function InstructorForm() {
   
-  const [errors, setErrors] = useState([]);
+  const [error, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
 
@@ -110,7 +110,7 @@ function InstructorForm() {
                    {isLoading ? "Loading..." : "Add Instructor"}
                 </Button>
                 <Form.Group>
-                    {errors.map((err) => (
+                    {error.map((err) => (
                    <error key={err}>{err}</error>
                      ))}
                 </Form.Group>

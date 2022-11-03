@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 // import Col from 'react-bootstrap/Col';
@@ -25,18 +25,18 @@ function CreateCourseForm() {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify(formData)
         })
 
         .then((resp) => resp.json())
-        .then((formData) =>setFormData(formData));
+        .then((data) =>setFormData(data));
     }
 
     function handleChange(e) {
       
         setFormData({
           ...formData,
-          [e.target.name]:e.target.value,
+          [e.target.id]:e.target.value,
         });
       }
       console.log(formData)
@@ -44,7 +44,7 @@ function CreateCourseForm() {
   return (
     <div>
         <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3">
                 <Form.Label>Course Name</Form.Label>
                 <Form.Control type="textarea"
                      placeholder="Course Name"
@@ -54,7 +54,7 @@ function CreateCourseForm() {
                      autoComplete="off" />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group className="mb-3" >
                 <Form.Label>Description</Form.Label>
                 <Form.Control type="textarea"
                      placeholder="Course Name"
@@ -64,7 +64,7 @@ function CreateCourseForm() {
                      autoComplete="off" />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group className="mb-3" >
                 <Form.Label>School Name</Form.Label>
                 <Form.Control type="textarea"
                      placeholder="School_id"
@@ -74,7 +74,7 @@ function CreateCourseForm() {
                      autoComplete="off" />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group className="mb-3">
                 <Form.Label>Student Name</Form.Label>
                 <Form.Control type="textarea"
                      placeholder="Student_id"
