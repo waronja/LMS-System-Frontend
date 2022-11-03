@@ -2,8 +2,8 @@ import React from 'react'
 import CourseCard from './CourseCard';
 
 function CourseCardHolder() {
-  return (
 
+  return (
     <div>
         <CourseCard/>
     </div>

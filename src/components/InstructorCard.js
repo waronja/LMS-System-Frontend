@@ -25,7 +25,7 @@ function InstructorCard() {
             <Card.Text>
               {instructor.email}
             </Card.Text>
-            <Button variant="primary">Delete</Button>
+            {/* <Button variant="primary">Delete</Button> */}
           </Card.Body>
         </Card>
       )
