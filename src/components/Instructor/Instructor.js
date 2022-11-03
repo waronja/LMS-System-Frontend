@@ -23,7 +23,9 @@ const Instructor = () => {
 
       <Layout/>
 
-      <div className='Layout'>
+      <div>
+      <Link to = "/instructorform"><Button type="submit">Add Instructor + </Button>{' '}</Link>
+
             {/* <h3>I am an instructor </h3> */}
             <CardGroup>
                     {
@@ -37,8 +39,6 @@ const Instructor = () => {
 
             </CardGroup>
             
-            <Link to = "/instructorform"><Button type="submit">Add Instructor + </Button>{' '}</Link>
-
 
       
            

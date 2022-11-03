@@ -15,7 +15,7 @@ const Courses = () => {
         <div>
 
           <CardGroup>
-
+        
               <CourseCard/>
               
           </CardGroup> 
