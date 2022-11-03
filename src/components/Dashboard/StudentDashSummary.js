@@ -7,8 +7,8 @@ const StudentDashSummary = () => {
   
  
   return (
-    <div className='summarycontainer'>
-        <div className='summaryheader'>
+    <div className='summarycontainer' style={{width: "25vw"}}>
+        <div className='summaryheader' style={{display: "flex", flexDirection: "column"}}>
             <h3>Students</h3>
             {/* <button 
             >View all</button> */}

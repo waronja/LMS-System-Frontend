@@ -24,7 +24,7 @@ function StudentCard() {
           <Card.Text>
             {student.email}
           </Card.Text>
-          <Button variant="primary">Delete</Button>
+          {/* <Button variant="primary">Delete</Button> */}
         </Card.Body>
       </Card>
       )

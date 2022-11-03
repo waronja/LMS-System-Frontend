@@ -13,16 +13,15 @@ function InstructorForm() {
     last_name: "",
     email: "",
     password: "",
-    password_confirmation:"",
+    password_confirmation: "",
     school_id: ""
-    
-    
+     
   });
 
   function handleSubmit(e) {
     e.preventDefault();
     setErrors([]);
-    setIsLoading(true);
+    setIsLoading(false);
     fetch("https://virtual-backend-app.herokuapp.com/educator", {
       method: "POST",
       headers: {
@@ -32,16 +31,7 @@ function InstructorForm() {
     })
 
     .then((resp) => resp.json())
-    .then((data) =>setFormData(data));
-    // .then((r) => {
-    //   setIsLoading(false);
-    //   if (r.ok) {
-    //     r.json().then((user) => onLogin(user));
-    //   } else {
-    //     r.json().then((err) => setErrors(err.errors));
-    //   }
-    // }
-    // );
+    .then((formData) =>setFormData(formData));
 
   }
 
@@ -104,14 +94,15 @@ function InstructorForm() {
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" >
-                    <Form.Label>School ID</Form.Label>
-                    <Form.Control type="number"
-                    placeholder="School ID"
+                    <Form.Label>School</Form.Label>
+                    <Form.Control type="School_id"
+                    placeholder="2"
                    id="school_id"
                    value={formData.school_id}
                    onChange={handleChange}
+                    autoComplete=""
                     />
-                </Form.Group>
+                </Form.Group >
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Send Invite To Mail" />
                 </Form.Group>

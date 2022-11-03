@@ -7,7 +7,7 @@ function StudentForm() {
   
   const navigate = useNavigate()
   // const [course, setCourse] = useState([])
-  const [errors, setErrors] = useState([]);
+  const [error, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
 
@@ -34,8 +34,13 @@ function StudentForm() {
       body: JSON.stringify(formData),
     })
 
-    .then((resp) => resp.json())
-    .then((formData) =>setFormData(formData));
+    .then((resp) => {
+      if (resp.ok){
+        resp.json().then(setFormData)
+        navigate('/students')
+      }else {
+        resp.json().then(err => setErrors(err))
+      }})
     // .then((r) => {
     //   setIsLoading(false);
     //   if (r.ok) {
@@ -46,9 +51,10 @@ function StudentForm() {
     // }
     // );
 
-    navigate('/students')
+    
     
   }
+  console.log(formData)
 
   function handleChange(e) {
       
@@ -62,6 +68,7 @@ function StudentForm() {
   return (
     <div>
         <Form onSubmit={handleSubmit}>
+          <p>{error}</p>
                 <Form.Group className="mb-3" >
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="first_name"
@@ -126,9 +133,11 @@ function StudentForm() {
                    {isLoading ? "Loading..." : "Add Student"}
                 </Button>
                 <Form.Group>
-                    {errors.map((err) => (
+                    {error.map((err) => (
                    <error key={err}>{err}</error>
                      ))}
+
+                     
                 </Form.Group>
             </Form>
     </div>
