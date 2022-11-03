@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 // import Card from 'react-bootstrap/Card';
 import Layout from '../../Layout';
 import CourseCard from '../CourseCard';
@@ -7,9 +7,9 @@ import { CardGroup } from 'react-bootstrap';
 
 const Courses = () => {
 
-
   return (
     <div className='studentsContainer'>
+
         <Layout/>
 
         <div>

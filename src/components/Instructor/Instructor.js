@@ -5,7 +5,7 @@ import InstructorCard from '../InstructorCard';
 import Layout from '../../Layout';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import './instructor.css'
+import './Instructor.css'
 
 const Instructor = () => {
     const [educators, setEducators] = useState([])
@@ -25,16 +25,15 @@ const Instructor = () => {
 
       <div className='Layout'>
             {/* <h3>I am an instructor </h3> */}
-
             <CardGroup>
-            {
-        educators.map((educator) => {
-          return (
-          <InstructorCard key={educator.id} educator={educator}           
-              />
-          )
-        })
-      }
+                    {
+                educators.map((educator) => {
+                  return (
+                  <InstructorCard key={educator.id} educator={educator}           
+                      />
+                  )
+                })
+              }
 
             </CardGroup>
             
