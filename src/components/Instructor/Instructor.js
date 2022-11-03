@@ -37,7 +37,7 @@ const Instructor = () => {
 
             </CardGroup>
             
-            <Link to = "/instructorform"><Button type="submit">Add Instructor + </Button>{' '}</Link>
+            <Link to = "/instructorform"><Button type="submit"className='btn2'>Add Instructor + </Button>{' '}</Link>
 
 
       
