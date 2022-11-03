@@ -12,7 +12,7 @@ function DashSummary() {
     <div className='dashboardsummaryelements'>
         <InstructorDashSummary/>
         <CourseDashSummary/>
-        <StudentDashSummary/>
+        <StudentDashSummary/> 
     </div>
     
       

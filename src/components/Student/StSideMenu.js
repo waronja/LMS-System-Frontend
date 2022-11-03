@@ -14,16 +14,14 @@ export default function InSideMenu() {
                 <Link to="/stdashboard" className="nav-link text-white">
                  Home
                 </Link>
-                 <Link to="/" className="nav-link text-white">
-                 Logout
-                </Link>
+                 
                 
             </li>
          
             <li>
-            {/* <Link to="/indashboard" className="nav-link text-white">
-                Courses
-                </Link> */}
+            <Link to="/" className="nav-link text-white">
+                Logout
+                </Link>
             </li>
         </ul>
     </div>
