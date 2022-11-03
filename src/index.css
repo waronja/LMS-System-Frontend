@@ -14,3 +14,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn1 {
+  background-color: blue;
+  color: white;
+  border-radius: 5%;
+  
+}

@@ -13,7 +13,7 @@ const StudentDashSummary = () => {
             {/* <button 
             >View all</button> */}
 
-            <Link to="/students"><button>View all</button></Link>
+            <Link to="/students"><button className='btn1'>View all</button></Link>
         </div>
         <div className='summarycontent'>
             <DashSummaryCard/>
