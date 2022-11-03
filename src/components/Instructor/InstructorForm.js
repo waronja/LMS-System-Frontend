@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 function InstructorForm() {
   
-  const [errors, setErrors] = useState([]);
+  const [error, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
 
@@ -13,15 +13,16 @@ function InstructorForm() {
     last_name: "",
     email: "",
     password: "",
-    password_confirmation: "",
+    password_confirmation:"",
     school_id: ""
-     
+    
+    
   });
 
   function handleSubmit(e) {
     e.preventDefault();
     setErrors([]);
-    setIsLoading(false);
+    setIsLoading(true);
     fetch("https://virtual-backend-app.herokuapp.com/educator", {
       method: "POST",
       headers: {
@@ -31,7 +32,16 @@ function InstructorForm() {
     })
 
     .then((resp) => resp.json())
-    .then((formData) =>setFormData(formData));
+    .then((data) =>setFormData(data));
+    // .then((r) => {
+    //   setIsLoading(false);
+    //   if (r.ok) {
+    //     r.json().then((user) => onLogin(user));
+    //   } else {
+    //     r.json().then((err) => setErrors(err.errors));
+    //   }
+    // }
+    // );
 
   }
 
@@ -94,15 +104,14 @@ function InstructorForm() {
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" >
-                    <Form.Label>School</Form.Label>
-                    <Form.Control type="School_id"
-                    placeholder="2"
+                    <Form.Label>School ID</Form.Label>
+                    <Form.Control type="number"
+                    placeholder="School ID"
                    id="school_id"
                    value={formData.school_id}
                    onChange={handleChange}
-                    autoComplete=""
                     />
-                </Form.Group >
+                </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Send Invite To Mail" />
                 </Form.Group>
@@ -110,7 +119,7 @@ function InstructorForm() {
                    {isLoading ? "Loading..." : "Add Instructor"}
                 </Button>
                 <Form.Group>
-                    {errors.map((err) => (
+                    {error.map((err) => (
                    <error key={err}>{err}</error>
                      ))}
                 </Form.Group>

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
-import { Route,Routes } from 'react-router-dom';
+import {  Route,Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Pages/Dashboard';
 import Users from './Pages/Users';
@@ -22,34 +22,71 @@ import CreateCourseForm from './components/CreateCourseForm';
 import StCourseDetails from './components/Student/StCourseDetails';
 import StDashboard from './components/Student/StDashboard';
 import WatchCourses from './components/Course/WatchCourses';
+
+
 function App() {
-  
+
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    fetch("/me")
+    .then(resp => {
+      if (resp.ok){
+        resp.json().then((user) => setUser(user))
+      } else {
+        resp.json().then(console.log)
+      }
+    })
+  }, [])
+
+  // console.log(user)
+
+
+  const navigate = useNavigate()
+
+
+  function onLogin(newUser) {
+    console.log(newUser)
+    if (newUser.isadmin){
+      navigate(`/dashboard`)
+    }
+    
+    else if (newUser.isprof === true){
+      navigate('/indashboard')
+    }
+    
+    else {
+      navigate('/stdashboard')
+    }
+      
+  }
+
+
   return (
     <div className="App">
-    
-    
-    <Routes>
       
-        <Route path="/" element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />
-        <Route path="/forgotpassword" element={<Forgot/>} />
-        <Route path="/dashboard" element={<Dashboard/>} />
-        <Route path="/users" element={<Users/>} />
-        <Route path="/forgot" element={<Forgot/>} />
-        <Route path="/courses" element={<Courses/>} />
-        <Route path="/students" element={<Students/>} />
-        <Route path="/studentform" element={<StudentForm/>} />
-        <Route path="/instructors" element={<Instructor/>} />
-        <Route path="/instructorform" element={<InstructorForm/>} />
-        <Route path="/indashboard" element={<InDashboard/>} />
-        <Route path="/incoursedetails" element={<InCourseDetails/>} />
-        <Route path="/createcourse" element={<CreateCourseForm/>} />
-        <Route path="/stdashboard" element={<StDashboard/>} />
-        <Route path="/stcoursedetails" element={<StCourseDetails/>} />
-        <Route path="/watchCourses" element={<WatchCourses/>} />
-        
-       
-    </Routes>
+        <Routes>
+           <Route path="/" element={<Login onLogin={onLogin}/>} />
+                <Route path="/signup" element={<Signup/>} />
+                <Route path="/forgotpassword" element={<Forgot/>} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/users" element={<Users/>} />
+                <Route path="/forgot" element={<Forgot/>} />
+                <Route path="/courses" element={<Courses/>} />
+                <Route path="/students" element={<Students/>} />
+                <Route path="/studentform" element={<StudentForm/>} />
+                <Route path="/instructors" element={<Instructor/>} />
+                <Route path="/instructorform" element={<InstructorForm/>} />
+                <Route path="/indashboard" element={<InDashboard />} />
+                <Route path="/incoursedetails" element={<InCourseDetails/>} />
+                <Route path="/createcourse" element={<CreateCourseForm/>} />
+                <Route path="/stdashboard" element={<StDashboard />} />
+                <Route path="/stcoursedetails" element={<StCourseDetails/>} />
+                <Route path="/watchCourses" element={<WatchCourses/>} />
+              
+            
+          </Routes>
+    
        
     </div>
   );
