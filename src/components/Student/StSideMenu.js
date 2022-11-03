@@ -14,9 +14,7 @@ export default function InSideMenu() {
                 <Link to="/stdashboard" className="nav-link text-white">
                  Home
                 </Link>
-                 <Link to="/" className="nav-link text-white">
-                 Logout
-                </Link>
+                 
                 
             </li>
          

@@ -50,7 +50,7 @@ function InstructorForm() {
                 <Form.Group className="mb-3" >
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="first_name"
-                     placeholder="Student's First Name"
+                     placeholder="instructor's First Name"
                      value={formData.first_name}
                      onChange={handleChange}
                      id="first_name"
@@ -59,7 +59,7 @@ function InstructorForm() {
                 </Form.Group>
                 <Form.Group className="mb-3" >
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control type="last_name" placeholder="Student's Last Name"
+                    <Form.Control type="last_name" placeholder="instructor's Last Name"
                       value={formData.last_name}
                       onChange={handleChange}
                       id="last_name"
@@ -68,7 +68,7 @@ function InstructorForm() {
                 </Form.Group>
                 <Form.Group className="mb-3" >
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Student's Email"
+                    <Form.Control type="email" placeholder="Instructor's Email"
                      id="email"
                      autoComplete="off"
                      value={formData.email}
