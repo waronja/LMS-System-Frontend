@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './InSideMenu.css'
 
+
 export default function InSideMenu() {
     return (
     <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: '280px', minHeight:'800px'}}>
@@ -13,8 +14,14 @@ export default function InSideMenu() {
                 <Link to="/indashboard" className="nav-link text-white">
                  Dashboard
                 </Link>
+                <Link to="/" className="nav-link text-white">
+                 Logout
+                </Link>
+                
             </li>
-         
+            
+            
+    
             <li>
             {/* <Link to="/indashboard" className="nav-link text-white">
                 Courses

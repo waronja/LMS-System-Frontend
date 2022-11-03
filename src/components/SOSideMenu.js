@@ -29,6 +29,11 @@ export default function SideMenu() {
                 Courses
                 </Link>
             </li>
+            <li>
+            <Link to="/" className="nav-link text-white">
+            Logout
+            </Link>
+            </li>
         </ul>
     </div>
     )
