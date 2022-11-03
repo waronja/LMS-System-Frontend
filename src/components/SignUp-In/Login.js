@@ -70,7 +70,7 @@ const Login = ({ onLogin }) => {
                  <input className='loginbtn' type="submit" value="Sign in" />
                </div>
            </form>
-           <h5>Don't have an account? <Link to="/signup" style={{textDecoration:"none"}}><span>Sign up</span></Link></h5>
+           {/* <h5>Don't have an account? <Link to="/signup" style={{textDecoration:"none"}}><span>Sign up</span></Link></h5> */}
        
         
        

@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
 
@@ -29,6 +30,7 @@ function CreateCourseForm() {
         })
 
         .then((resp) => resp.json())
+       
         .then((data) =>setFormData(data));
     }
 
