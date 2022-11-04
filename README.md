@@ -61,7 +61,7 @@ Show information about the virtual School and access the resources in order to l
 - Unzip the downloaded files in a folder of choice.
 - open the folder and one can run npm start to start the app in any(chrome) browser.
 
-### Live link <lms-system-ten.vercel.app/>
+### Live link <https://lms-system-ten.vercel.app/>
 
 ### Backend API link <https://virtual-backend-app.herokuapp.com/>
 
