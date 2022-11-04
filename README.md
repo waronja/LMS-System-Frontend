@@ -4,7 +4,7 @@
 
 ## Sign Up Page
 
-![image](./public/images/Screenshot%20from%202022-07-31%2003-25-03.png)
+![image](./public/SCR.png)
 
 ## Images of Our School Owner Dashboard
 
