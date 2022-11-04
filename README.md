@@ -6,7 +6,7 @@
 
 ![image](./public/images/Screenshot%20from%202022-07-31%2003-25-03.png)
 
-## Images of Our School Owner, and  Dashboard Pages
+## Images of Our School Owner Dashboard
 
 ![image](./public/images/Screenshot%20from%202022-07-31%2003-25-20.png)
 
@@ -16,9 +16,9 @@
 
 ## Student Dashboard
 
-![image](./public/images/Screenshot%20from%202022-07-31%2003-25-30.png)
+![image](./public/scr1.png)
  
- ![image](./public/images/Screenshot%20from%202022-07-31%2003-25-36.png)
+ ![image](./public/scr2.png)
  ![image](./public/images/Screenshot%20from%202022-07-31%2003-25-49.png)
  ![image](./public/images/Screenshot%20from%202022-07-31%2003-26-21.png)
 
