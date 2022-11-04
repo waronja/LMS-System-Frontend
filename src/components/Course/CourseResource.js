@@ -1,6 +1,7 @@
 import React from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import './CourseResource.css'
 
 function CourseResource() {
   return (
@@ -9,10 +10,10 @@ function CourseResource() {
       defaultActiveKey="Lesson 1"
       id="justify-tab-example"
       className="mb-3"
-      justify
+      fill
     >
-      <Tab eventKey="Lesson 1" title="Lesson 1">
-        Add some notes to this pace dynamically"
+      <Tab eventKey="Lesson 1" title="Lesson 1" >
+        "Add some notes to this pace dynamically"
       </Tab>
       <Tab eventKey="Lesson 2" title="Lesson 2">
         "Add some notes to this pace dynamically"

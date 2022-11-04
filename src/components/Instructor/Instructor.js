@@ -1,36 +1,48 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 // import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import UserCard from '../UserCard';
+import InstructorCard from '../InstructorCard';
 import Layout from '../../Layout';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import './Instructor.css'
 
 const Instructor = () => {
+    const [educators, setEducators] = useState([])
+    const getUsers = async () => {
+        const response = await fetch("https://virtual-backend-app.herokuapp.com/educators");
+        const FinalData = await response.json();
+        setEducators(FinalData)
+        console.log(FinalData)
+    }
+    useEffect(() => {
+        getUsers();
+    }, [])
   return (
     <div className = "studentsContainer">
 
       <Layout/>
 
       <div>
+      <Link to = "/instructorform"><Button type="submit">Add Instructor + </Button>{' '}</Link>
 
-        <div>
-            <h3>I am an instructor </h3>
+            {/* <h3>I am an instructor </h3> */}
+            <CardGroup>
+                    {
+                educators.map((educator) => {
+                  return (
+                  <InstructorCard key={educator.id} educator={educator}           
+                      />
+                  )
+                })
+              }
+
+            </CardGroup>
             
-            <Link to = "/instructorform"><Button type="submit">Add Instructor + </Button>{' '}</Link>
 
-
-        </div>
-
-       
-
-          <CardGroup>
-
-            <UserCard/>
-
-          </CardGroup>
-
-      </div>
+      
+           
+          </div>
         
 
     </div>

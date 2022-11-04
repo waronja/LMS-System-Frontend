@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+import WatchCourses from './WatchCourses'
 
 
 function CoursePhase() {
@@ -37,7 +38,7 @@ function CoursePhase() {
                 <CourseResource/>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
-              <CourseResource/>
+            <WatchCourses/>
             </Tab.Pane>
             <Tab.Pane eventKey="third">
               <CourseResource/>

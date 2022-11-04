@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# LMS Virtual School
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## By Simon Waronja, Dennis Mutinda, Judy Mwai, Gideon Langat, Olga Winnie and Sylvia Boyani
 
-## Available Scripts
+## Sign Up Page
 
-In the project directory, you can run:
+![image](./public/SCR.png)
 
-### `npm start`
+## Images of Our School Owner Dashboard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](./public/images/Screenshot%20from%202022-07-31%2003-25-20.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instructor Dashboard
 
-### `npm test`
+![image](./public/images/Screenshot%20from%202022-07-31%2003-25-25.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Student Dashboard
 
-### `npm run build`
+![image](./public/scr1.png)
+ 
+ ![image](./public/scr2.png)
+ ![image](./public/images/Screenshot%20from%202022-07-31%2003-25-49.png)
+ ![image](./public/images/Screenshot%20from%202022-07-31%2003-26-21.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Table of Content
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Description](#description)
+- [Features](#features)
+- [Behaviour Driven Development](#Behaviour-Driven-Development)
+- [Requirements](#requirements)
+- [Installation Process](#installation-Process)
+- [Live Link](#Live-Link)
+- [Technology  Used](#technology-Used)
+- [Licence](#licence)
+- [Authors Info](#Authors-Info) -
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Description
 
-### `npm run eject`
+  <p>This project is a Virtual School where there is a school owner, Instructors and Students. Once they login they access their respective dashboards to access courses or add edit or delete their resources. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
+As a user of the application,you will be able to :
+1. Sign you up once the required info is entered and log you in. 
+2. Access all the schools resources and add or delete the same.
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Behaviour Driven Development|
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Show information about the virtual School and access the resources in order to learn if one is a student. Add Instructors and students for the school owner and the instructor can add courses to the virtual School and manage the students too.
 
-## Learn More
+### Requirements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Access to  a computer or any other garget
+- Access to internet
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation Process
 
-### Code Splitting
+- Clone to their repo : git clone <https://github.com/waronja/LMS-System-Frontend.git>
+- Clone the backend repository.<https://github.com/waronja/LMS-System-Backend.git>
+- Unzip the downloaded files in a folder of choice.
+- open the folder and one can run npm start to start the app in any(chrome) browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Live link <https://lms-system-ten.vercel.app/>
 
-### Analyzing the Bundle Size
+### Backend API link <https://virtual-backend-app.herokuapp.com/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Technology used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React - to create the frontend part of the app.
+- Heroku - to host the react App.
+         - to host the backend(API) of the project.
+- Ruby on Rails - to create the backend API
+- Bootstrap - to create the the and styling of the project.
+- Figma -to create the projects' design.
+         
 
-### Advanced Configuration
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ Copyright (c) [2022] [sylvia boyani]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Authors' info
 
-### `npm run build` fails to minify
+Feel free to reach us via:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Sylvia Boyani
+- LinkedIn Profile - [Sylvia Boyani](https://www.linkedin.com/in/sylvia-boyani)
+- Instagram - [boyani_sylvia](https://boyani_sylvia.intagram/)
+- twitter -[boyaniSylvia](https://twitter.com/BoyaniSylvia)
+
+#### Judy Mwai
+- LinkedIn Profile - [Sylvia Boyani](https://www.linkedin.com/in/sylvia-boyani)
+- Instagram - [boyani_sylvia](https://boyani_sylvia.intagram/)
+- twitter -[boyaniSylvia](https://twitter.com/BoyaniSylvia)
+
+#### Dennis Mutinda
+- LinkedIn Profile - [Sylvia Boyani](https://www.linkedin.com/in/sylvia-boyani)
+- Instagram - [boyani_sylvia](https://boyani_sylvia.intagram/)
+- twitter -[boyaniSylvia](https://twitter.com/BoyaniSylvia)
+
+#### Gideon Langat
+- LinkedIn Profile - [Sylvia Boyani](https://www.linkedin.com/in/sylvia-boyani)
+- Instagram - [boyani_sylvia](https://boyani_sylvia.intagram/)
+- twitter -[boyaniSylvia](https://twitter.com/BoyaniSylvia)
+
+#### Simon Waronja
+- LinkedIn Profile - [Sylvia Boyani](https://www.linkedin.com/in/sylvia-boyani)
+- Instagram - [boyani_sylvia](https://boyani_sylvia.intagram/)
+- twitter -[boyaniSylvia](https://twitter.com/BoyaniSylvia)
+
+#### Olga Winnie
+- LinkedIn Profile - [Sylvia Boyani](https://www.linkedin.com/in/sylvia-boyani)
+- Instagram - [boyani_sylvia](https://boyani_sylvia.intagram/)
+- twitter -[boyaniSylvia](https://twitter.com/BoyaniSylvia)

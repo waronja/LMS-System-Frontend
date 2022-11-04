@@ -1,7 +1,7 @@
 import React from 'react'
 import "./User.css";
 import Layout from '../../Layout';
-import UserCard from '../UserCard';
+import StudentCard from '../StudentCard';
 import { CardGroup } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
@@ -19,12 +19,7 @@ const Students = () => {
 
             <CardGroup>
 
-              <UserCard/>
-              <UserCard/>
-              <UserCard/>
-              <UserCard/>
-              <UserCard/>
-              <UserCard/>
+              <StudentCard/>
 
           </CardGroup>
 

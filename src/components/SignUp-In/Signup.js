@@ -5,30 +5,8 @@ import { Link } from 'react-router-dom'
 
 const Signup = () => {
 
-   const [email, setEmail] = useState("");
-   const [password, setPassword] = useState("");
-   const [errors, setErrors] = useState([]);
-   const [isLoading, setIsLoading] = useState(false);
-
-   function handleSubmit(e) {
-    e.preventDefault();
-    setIsLoading(true);
-    fetch("/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    }).then((r) => {
-      setIsLoading(false);
-      if (r.ok) {
-        r.json().then((user) => onLogin(user));
-      } else {
-        r.json().then((err) => setErrors(err.errors));
-      }
-    });
-  }
-
+   
+   
   return (
 
 
@@ -38,7 +16,7 @@ const Signup = () => {
            
          </div>
 
-           <form className='loginform' onSubmit={handleSubmit}>
+           <form className='loginform' >
               <div>
                  
                  <input type="text" placeholder='First Name'/>

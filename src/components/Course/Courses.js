@@ -1,11 +1,12 @@
 import React from 'react'
 // import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import Layout from '../../Layout';
-import UserCard from '../UserCard';
+import CourseCard from '../CourseCard';
+import { CardGroup } from 'react-bootstrap';
 // import './Courses.css'
 
 const Courses = () => {
+
   return (
     <div className='studentsContainer'>
 
@@ -13,13 +14,11 @@ const Courses = () => {
 
         <div>
 
-            <h3>We are courses</h3>
-
           <CardGroup>
-
-              <UserCard/>
+        
+              <CourseCard/>
               
-          </CardGroup>
+          </CardGroup> 
 
         </div>
 
