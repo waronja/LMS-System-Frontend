@@ -63,7 +63,7 @@ Show information about the virtual School and access the resources in order to l
 
 ### Heroku live link <>
 
-### Backend API link <>
+### Backend API link <https://virtual-backend-app.herokuapp.com/>
 
 
 ### Technology used
